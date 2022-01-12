@@ -6,14 +6,14 @@ const eqArrays = function (actual, expected) {
   }
  }
 
- const assertArraysEqual = function(eqArrays) {
-   if (eqArrays === true) {
+ const assertArraysEqual = function(array1, array2) {
+   if (eqArrays(array1,array2)) {
      console.log("array true")
-   } else if (eqArrays !== true) {
+   } else {
      console.log("array false")
    }
  }
 
 
- assertArraysEqual(eqArrays([1, 2, 3], [1, 2, 3]));
- assertArraysEqual(eqArrays([1, 2, 3], [1, 2, 4]));
+ assertArraysEqual([1, 2, 3], [1, 2, 3]);
+ assertArraysEqual([1, 2, 3], [1, 2, 4]);
