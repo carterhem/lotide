@@ -17,8 +17,8 @@ const eqArrays = function (actual, expected) {
 //returns true of both objects have identical keys with identical values
 //otherwise you get back a big fat false
 const eqObjects = function (object1, object2) {
-  let firstArray = Object.keys(object1)
-  let secondArray = Object.keys(object2)
+  let firstArray = Object.keys(object1);
+  let secondArray = Object.keys(object2);
   if (firstArray.length !== secondArray.length) {// do these objects have the same number of keys? no value looking
     return false;
   }
