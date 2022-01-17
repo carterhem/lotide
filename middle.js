@@ -20,9 +20,15 @@ const middle = function (array) {
     return [array[middleLen - 1], array[middleLen]];
   }
 };
+
+module.exports = middle;
+
+
+//testing
 // console.log(middle([1, 2, 3, 4, 5, 6]));
 // console.log(middle([1, 2, 3, 5, 6]));
 // console.log(middle([1]));
 // console.log(middle([1, 2]));
+// assertArraysEqual(middle([1, 2, 3, 4, 5, 6]),[3,4])
+// assertArraysEqual(middle([1, 2, 3, 5, 6]),[3])
 
-module.exports = middle;
