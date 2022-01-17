@@ -44,3 +44,5 @@ assertArraysEqual(results3, ([ "life", "existence", "the world"]));
 //test one - what they have given us (letters and first thing)
 //test two - compare index position and give positions
 //test three - compare letters to characters lengths
+
+module.exports = map;
