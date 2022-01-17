@@ -11,7 +11,7 @@ const findKey = function(object, callback){
   let result = "" //place to store
   for (const element of objectArray){// looking at each key of object (which are now in an array so we can read)
     if(callback(object[element])){ //if the result of callback (2) is true, as in matches the value of the key we are looking at
-      result = element;// result is equal to the key that we are at
+      result = element;// result is equal to the key that we are at// not object[element] which would be the value
       //console.log(object[element])
       break;//once we recieve the first truthy//stop looking
     }
