@@ -22,7 +22,7 @@ const letterPositions = function (sentence) {
     if (results[letter]) {//array does exist - push to it
       results[letter].push(j);
     } else {//array does not exist - initialize it, to be found in if statement
-     results[letter] = [j]
+    results[letter] = [j]
     }
   }
   return results; // don't forget to return the object

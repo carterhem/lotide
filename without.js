@@ -4,17 +4,17 @@ const eqArrays = function (actual, expected) {
   } else {
     return false;
   }
- }
+}
 
- const assertArraysEqual = function(eqArrays) {
-   if (eqArrays === true) {
-     console.log("array true")
-   } else if (eqArrays !== true) {
-     console.log("array false")
-   }
- }
+const assertArraysEqual = function(eqArrays) {
+  if (eqArrays === true) {
+    console.log("array true")
+  } else if (eqArrays !== true) {
+    console.log("array false")
+  }
+}
 
- const without = function(source, itemsToRemove) {
+const without = function(source, itemsToRemove) {
   //return source.filter(function(i) {return!itemsToRemove.includes(i) })
   let endArray = [];
   for(let j = 0; j < source.length; j++) {
@@ -22,13 +22,8 @@ const eqArrays = function (actual, expected) {
         endArray.push(source[j])
     }
   } return endArray;
-   } 
+} 
 
-
-
-  
-
- 
  //test cases
  console.log(without([1, 2, 3], [1])) // => [2, 3]
  console.log(without(["1", "2", "3"], [1, 2, "3"])) // => ["1", "2"]

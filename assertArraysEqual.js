@@ -4,15 +4,15 @@ const eqArrays = function (actual, expected) {
   } else {
     return false;
   }
- }
+}
 
- const assertArraysEqual = function(array1, array2) {
-   if (eqArrays(array1,array2)) {
-     console.log("array true")
-   } else {
-     console.log("array false")
-   }
- }
+const assertArraysEqual = function(array1, array2) {
+  if (eqArrays(array1,array2)) {
+    console.log("array true")
+  } else {
+    console.log("array false")
+  }
+}
 
- module.exports = assertArraysEqual;
+module.exports = assertArraysEqual;
 

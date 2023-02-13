@@ -1,7 +1,7 @@
 const flatten = function(input) {
   let endArray = [];
   //array to hold end result
- 
+
   for(let item of input) {
     //looping through
     if(Array.isArray(item)) {
@@ -11,7 +11,7 @@ const flatten = function(input) {
         endArray.push(item[x]);
         //push the item at x to endArray
       }
- 
+
     } else {
       endArray.push(item);
       //if the item is not an array, we don't have to loop, can just push directly
@@ -19,7 +19,7 @@ const flatten = function(input) {
   }
   return endArray
   //dont forget to return!
- }
- 
- console.log(flatten([1, 2, [3, 4], 5, [6]]))
+}
+
+console.log(flatten([1, 2, [3, 4], 5, [6]]))
  //calling and printing flatten
